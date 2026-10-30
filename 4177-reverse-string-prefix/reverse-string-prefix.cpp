@@ -1,13 +1,12 @@
 class Solution {
 public:
     string reversePrefix(string s, int k) {
-        int st = 0;
-        int end = k - 1;
+        int st = 0, e = k - 1;
 
-        while (st < end) {
-            swap(s[st], s[end]);
+        while (st < e) {
+            swap(s[st], s[e]);
             st++;
-            end--;
+            e--;
         }
 
         return s;
